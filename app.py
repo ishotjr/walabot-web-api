@@ -6,7 +6,7 @@ from flask_cors import CORS
 from flask.ext.autodoc import Autodoc
 
 host = 'localhost'
-walabotAPIPath = 'C:/Program Files/Walabot/WalabotSDK/python/WalabotAPI.py'
+walabotAPIPath = '/home/pi/.local/lib/python2.7/site-packages/WalabotAPI.py'
 loader = importlib.machinery.SourceFileLoader('WalabotAPI', walabotAPIPath)
 spec = importlib.util.spec_from_loader(loader.name, loader)
 WalabotAPI = importlib.util.module_from_spec(spec)
