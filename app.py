@@ -22,7 +22,7 @@ auto = Autodoc(app)
 @app.before_request
 def before_request():
     WalabotAPI.ConnectAny()
-    WalabotAPI.SetProfile(WalabotAPI.PROF_SHORT_RANGE_IMAGING)
+    WalabotAPI.SetProfile(WalabotAPI.PROF_SENSOR)
     WalabotAPI.SetDynamicImageFilter(WalabotAPI.FILTER_TYPE_NONE)
     WalabotAPI.Start()
     WalabotAPI.StartCalibration()
