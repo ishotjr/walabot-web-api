@@ -5,7 +5,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 from flask.ext.autodoc import Autodoc
 
-host = 'localhost'
+host = '0.0.0.0'
 walabotAPIPath = '/home/pi/.local/lib/python2.7/site-packages/WalabotAPI.py'
 loader = importlib.machinery.SourceFileLoader('WalabotAPI', walabotAPIPath)
 spec = importlib.util.spec_from_loader(loader.name, loader)
